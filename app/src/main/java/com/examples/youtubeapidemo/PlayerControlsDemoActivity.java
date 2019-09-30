@@ -39,6 +39,8 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+
 /**
  * A simple YouTube Android API demo application demonstrating the use of {@link YouTubePlayer}
  * programmatic controls.
@@ -95,7 +97,7 @@ public class PlayerControlsDemoActivity extends YouTubeFailureRecoveryActivity i
     ((RadioButton) findViewById(R.id.style_chromeless)).setOnCheckedChangeListener(this);
     logString = new StringBuilder();
 
-    videoAdapter = new ArrayAdapter<ListEntry>(this, android.R.layout.simple_spinner_item, ENTRIES);
+    videoAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, ENTRIES);
     videoAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
     videoChooser.setOnItemSelectedListener(this);
     videoChooser.setAdapter(videoAdapter);
@@ -200,7 +202,7 @@ public class PlayerControlsDemoActivity extends YouTubeFailureRecoveryActivity i
   }
 
   @Override
-  protected void onRestoreInstanceState(Bundle state) {
+  protected void onRestoreInstanceState(@NonNull Bundle state) {
     super.onRestoreInstanceState(state);
     currentlySelectedId = state.getString(KEY_CURRENTLY_SELECTED_ID);
   }
@@ -226,7 +228,7 @@ public class PlayerControlsDemoActivity extends YouTubeFailureRecoveryActivity i
     }
   }
 
-  private static final int parseInt(String intString, int defaultValue) {
+  private static int parseInt(String intString, int defaultValue) {
     try {
       return intString != null ? Integer.valueOf(intString) : defaultValue;
     } catch (NumberFormatException e) {
@@ -359,16 +361,17 @@ public class PlayerControlsDemoActivity extends YouTubeFailureRecoveryActivity i
 
   private static final class ListEntry {
 
-    public final String title;
+    final String title;
     public final String id;
-    public final boolean isPlaylist;
+     final boolean isPlaylist;
 
-    public ListEntry(String title, String videoId, boolean isPlaylist) {
+     ListEntry(String title, String videoId, boolean isPlaylist) {
       this.title = title;
       this.id = videoId;
       this.isPlaylist = isPlaylist;
     }
 
+    @NonNull
     @Override
     public String toString() {
       return title;

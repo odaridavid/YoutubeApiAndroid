@@ -47,7 +47,6 @@ import com.examples.youtubeapidemo.ui.ImageWallView;
  * wall of flipping YouTube thumbnails.  Every 5 flips, one of the thumbnails will be replaced with
  * a playing YouTube video.
  */
-@TargetApi(11)
 public class VideoWallDemoActivity extends Activity implements
     FlippingView.Listener,
     YouTubePlayer.OnInitializedListener,

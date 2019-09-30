@@ -64,7 +64,6 @@ import java.util.Map;
  * The demo supports custom fullscreen and transitioning between portrait and landscape without
  * rebuffering.
  */
-@TargetApi(13)
 public final class VideoListDemoActivity extends Activity implements OnFullscreenListener {
 
   /** The duration of the animation sliding up the video in portrait. */

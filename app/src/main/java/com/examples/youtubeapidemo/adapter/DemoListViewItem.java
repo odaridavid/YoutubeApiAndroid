@@ -21,10 +21,10 @@ package com.examples.youtubeapidemo.adapter;
  */
 public interface DemoListViewItem {
 
-  public String getTitle();
+    String getTitle();
 
-  public boolean isEnabled();
+    boolean isEnabled();
 
-  public String getDisabledText();
+    String getDisabledText();
 
 }

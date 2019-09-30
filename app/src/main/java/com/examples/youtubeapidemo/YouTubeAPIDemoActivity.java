@@ -101,11 +101,11 @@ public class YouTubeAPIDemoActivity extends Activity implements OnItemClickListe
 
   private final class Demo implements DemoListViewItem {
 
-    public final String title;
-    public final int minVersion;
-    public final String className;
+     final String title;
+     final int minVersion;
+     final String className;
 
-    public Demo(String title, String className, int minVersion) {
+     Demo(String title, String className, int minVersion) {
       this.className = className;
       this.title = title;
       this.minVersion = minVersion;

@@ -32,8 +32,8 @@
     <string name="playerfragment_text">This is a YouTubePlayerFragment!</string>
 
     <string name="demo_select">Please select a demo:</string>
-    <string name="some_demos_disabled">* Your device is currently running Android API version <xliff:g id="current_version">%1$s</xliff:g>.</string>
-    <string name="list_item_disabled">Requires Android API version <xliff:g id="required_version">%1$s</xliff:g> or higher.</string>
+    <string name="some_demos_disabled">* Your device is currently running Android API version <xliff:g id="current_version">%1$d</xliff:g>.</string>
+    <string name="list_item_disabled">Requires Android API version <xliff:g id="required_version">%1$d</xliff:g> or higher.</string>
 
     <string name="play">Play</string>
     <string name="pause">Pause</string>

@@ -124,7 +124,7 @@ public class StandalonePlayerDemoActivity extends Activity implements View.OnCli
 
   private boolean canResolveIntent(Intent intent) {
     List<ResolveInfo> resolveInfo = getPackageManager().queryIntentActivities(intent, 0);
-    return resolveInfo != null && !resolveInfo.isEmpty();
+    return !resolveInfo.isEmpty();
   }
 
   private int parseInt(String text, int defaultValue) {
