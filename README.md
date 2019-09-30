@@ -32,6 +32,6 @@ with minor cleanups.
 Sample Screenshots:
 ----------
 
-| [![Screen1](../screenshots/1art.png)]()  | [![Screen2](../screenshots/2art.png)]() | [![Screen3](../screenshots/3art.png)]() |[![Screen4](../screenshots/4art.png)]() |[![Screen5](../screenshots/5art.png)]() |
+| [![Screen1](screenshots/1art.png)]()  | [![Screen2](screenshots/2art.png)]() | [![Screen3](screenshots/3art.png)]() |[![Screen4](screenshots/4art.png)]() |[![Screen5](screenshots/5art.png)]() |
 |:---:|:---:|:---:|:---:|:---:|
 | |  |  |  | |
