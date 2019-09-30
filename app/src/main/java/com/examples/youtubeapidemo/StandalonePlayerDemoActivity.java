@@ -46,7 +46,7 @@ public class StandalonePlayerDemoActivity extends Activity implements View.OnCli
   private static final String VIDEO_ID = "cdgQpa1pUUE";
   private static final String PLAYLIST_ID =  "7E952A67F31C58A3";
   private static final ArrayList<String> VIDEO_IDS = new ArrayList<String>(Arrays.asList(
-      new String[] {"cdgQpa1pUUE", "8aCYZ3gXfy8", "zMabEyrtPRg"}));
+          "cdgQpa1pUUE", "8aCYZ3gXfy8", "zMabEyrtPRg"));
 
   private Button playVideoButton;
   private Button playPlaylistButton;
